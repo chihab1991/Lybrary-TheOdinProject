@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lybrary | The Odin Project</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav class="wrapper">
+				<h1>Chihab's Lybrary</h1>
+				<button class="add-book">new book</button>
+			</nav>
+		</header>
 
+		<main class="wrapper">
+			<div class="books-table">
+				<h3>Title</h3>
+				<h3>Author</h3>
+				<h3>Pages</h3>
+				<h3>Status</h3>
+				<h3>Delete</h3>
+			</div>
+			<div class="books"></div>
+		</main>
+
+		<div class="new-book">
+			<form class="new-book-form">
+				<div>
+					<label for="title">book title:</label>
+					<input type="text" name="title" id="title" required />
+				</div>
+				<div>
+					<label for="author">author:</label>
+					<input type="text" name="author" id="author" required />
+				</div>
+				<div>
+					<label for="number-of-pages">number of pages:</label>
+					<input
+						type="number"
+						name="number-of-pages"
+						id="number-of-pages"
+						required
+					/>
+				</div>
+				<div>
+					<input type="checkbox" name="reading-status" id="reading-status" />
+					<label for="reading-status">did you read this book alreay?</label>
+				</div>
+				<div style="text-align: center">
+					<button type="submit" class="btn-submit">Add to lybrary</button>
+					<button type="button" class="close-btn">Close</button>
+				</div>
+			</form>
+		</div>
+
+		<script src="./js/main.js"></script>
+	</body>
+</html>
